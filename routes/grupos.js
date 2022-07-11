@@ -12,6 +12,7 @@ router.get('/', getGrupos);
 router.post('/', [
         check('nombre', 'El nombre del grupo es obligatorio').not().isEmpty(),
         check('valorMax', 'El valor maximo del grupo es obligatorio').not().isEmpty(),
+        check('fecha', 'La fecha del grupo es obligatorio').not().isEmpty(),
         validarCampos
     ],
     crearGrupos

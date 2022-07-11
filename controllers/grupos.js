@@ -3,7 +3,7 @@ const Grupo = require('../models/grupo');
 
 const getGrupos = async(req, res = response) => {
 
-    const grupos = await Grupo.find().populate('nombre valorMax valorAct fecha');
+    const grupos = await Grupo.find().populate('nombre valorMax valorAct fecha alertas');
 
 
 

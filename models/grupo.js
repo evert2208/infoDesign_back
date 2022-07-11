@@ -16,6 +16,9 @@ var GrupoSchema = Schema({
     },
     fecha: {
         type: String
+    },
+    alertas: {
+        type: Number
     }
 
 }, { collection: 'grupos' });
